@@ -58,7 +58,8 @@ class Login : AppCompatActivity() {
                 .addOnCompleteListener(this, OnCompleteListener<AuthResult> {task ->
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
-                        Log.d("signin", "signInWithEmail:success");
+                       
+                        //Log.d("signin", "signInWithEmail:success");
                         val user = mAuth!!.currentUser;
                         val preferences = PreferenceManager.getDefaultSharedPreferences(applicationContext)
                         val editor = preferences.edit()
